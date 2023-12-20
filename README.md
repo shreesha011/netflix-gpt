@@ -11,8 +11,8 @@
 
 
 #Features
--Login/Signup
-   -Sign In/Sign Up Form
+-Login/Signup Form
+   -Sign In/Sign Up statuForm
    -redirect to browser Page
    
 -Browse will open (after authentication)
