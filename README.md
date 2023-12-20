@@ -14,6 +14,7 @@
 -Login/Signup Form
    -Sign In/Sign Up statuForm
    -redirect to browser Page
+   -Trailer Page
    
 -Browse will open (after authentication)
      -Header
