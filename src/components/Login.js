@@ -6,7 +6,11 @@ const Login =()  =>
 {
      
     const[isSignInForm,setIsSignInForm] =useState(true);
+     
+    const   handleButtonClick = () =>
+    {
 
+    }
     const toggleSignInForm = () =>
     {
         // It should toggle to Signup form if the form is Signin
@@ -46,7 +50,7 @@ const Login =()  =>
               placeholder="Password" 
                className="p-4 my-4 w-full bg-gray-700"/>
 
-            <button className="p-4 my-8 bg-red-700 w-full rounded-lg ">
+            <button className="p-4 my-8 bg-red-700 w-full rounded-lg " onClick={handleButtonClick}>
             {isSignInForm ? "Sign In" :"Sign UP"}
                 </button>
 
