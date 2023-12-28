@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {addUpcomingMovies } from "../utils/movieSlice";
 import {API_OPTIONS } from "../utils/constants";
 import { useEffect } from "react";
@@ -10,6 +10,11 @@ import { useEffect } from "react";
 const useUpcomingMovies =() =>{
     //fetch Data from TMDB API and upadte Store using "use dispatch Hook"
   const dispatch=useDispatch();
+
+  
+  const upcomingMovies=useSelector(
+   store =>store.movies.upcomingMovies
+   );
 
   const getUpcomingMovies = async () =>{
      const data=await fetch('https://api.themoviedb.org/3/movie/upcoming?page=1', 
@@ -27,7 +32,7 @@ const useUpcomingMovies =() =>{
 
   // API need to call inside the Use effect & []-->Api should be called once when the component is rendered Once
  useEffect(() =>{
-    getUpcomingMovies();
+   if(!upcomingMovies) getUpcomingMovies();
 
  },[]);
 };

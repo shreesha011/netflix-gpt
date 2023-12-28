@@ -3,13 +3,13 @@ import GptMovieSuggestions from './GptMovieSuggestions';
 import GptSearchBar from './GptSearchBar';
 import { BGC_IMAGE } from '../utils/constants';
 
-function GptSearch() {
+const GptSearch =() =>{
   return (
     <div>
       {/* GptSearch--->First Page
           Gpt Movie Suggestion--->Second Page */}
 
-      <div className="absolute -z-10">
+      <div className="fixed -z-10 ">
         <img src={BGC_IMAGE}
         alt="logo" />
       </div>

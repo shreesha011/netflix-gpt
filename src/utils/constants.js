@@ -7,7 +7,7 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YWE0Njc5MzIzNjUwNzcxMDA1Y2M1NDllY2JmYThjOSIsInN1YiI6IjY1ODU3ZGI0M2FjZDIwNTM4YTdiOWNhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9khKMpkZ0szTPBue4AIc9PZljqYDOG2vuHm_IyYkdfs'
+      Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YWE0Njc5MzIzNjUwNzcxMDA1Y2M1NDllY2JmYThjOSIsInN1YiI6IjY1ODU3ZGI0M2FjZDIwNTM4YTdiOWNhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9khKMpkZ0szTPBue4AIc9PZljqYDOG2vuHm_IyYkdfs",
     }
   };
 
@@ -18,7 +18,10 @@ export const API_OPTIONS = {
   export const BGC_IMAGE="https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/5b22968d-b94f-44ec-bea3-45dcf457f29e/IN-en-20231204-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
 
-  //
+  //Imported the Languages(english,hindi,spanish) from "languageConstants"
   export const SUPPORTED_LANGUAGES=[{identifier:"en",name:"English"},
   {identifier:"hindi",name:"Hindi"},
-  {identifier:"spanish",name:"Spanish"} ]         
+  {identifier:"spanish",name:"Spanish"} ] 
+  
+  //Imported the API key from ChatGpt
+  export const OPENAI_KEY="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";

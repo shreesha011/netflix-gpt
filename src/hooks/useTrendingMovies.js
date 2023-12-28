@@ -1,4 +1,4 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {addTrendingMovies } from "../utils/movieSlice";
 import {API_OPTIONS } from "../utils/constants";
 import { useEffect } from "react";
@@ -10,6 +10,10 @@ import { useEffect } from "react";
 const useTrendingMovies =() =>{
     //fetch Data from TMDB API and upadte Store using "use dispatch Hook"
   const dispatch=useDispatch();
+
+  const trendingMovies=useSelector(
+   store =>store.movies.trendingMovies
+   );
 
   const getTrendingMovies = async () =>{
      const data=await fetch('https://api.themoviedb.org/3/movie/top_rated?page=1', 
@@ -27,7 +31,7 @@ const useTrendingMovies =() =>{
 
   // API need to call inside the Use effect & []-->Api should be called once when the component is rendered Once
  useEffect(() =>{
-    getTrendingMovies();
+   if(!trendingMovies) getTrendingMovies();
 
  },[]);
 };
