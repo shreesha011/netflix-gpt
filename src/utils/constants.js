@@ -7,7 +7,7 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YWE0Njc5MzIzNjUwNzcxMDA1Y2M1NDllY2JmYThjOSIsInN1YiI6IjY1ODU3ZGI0M2FjZDIwNTM4YTdiOWNhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9khKMpkZ0szTPBue4AIc9PZljqYDOG2vuHm_IyYkdfs",
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YWE0Njc5MzIzNjUwNzcxMDA1Y2M1NDllY2JmYThjOSIsInN1YiI6IjY1ODU3ZGI0M2FjZDIwNTM4YTdiOWNhMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9khKMpkZ0szTPBue4AIc9PZljqYDOG2vuHm_IyYkdfs'
     }
   };
 
@@ -24,4 +24,4 @@ export const API_OPTIONS = {
   {identifier:"spanish",name:"Spanish"} ] 
   
   //Imported the API key from ChatGpt
-  export const OPENAI_KEY="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";
+  export const OPENAI_KEY="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";
