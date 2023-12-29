@@ -5,19 +5,16 @@ import { BGC_IMAGE } from '../utils/constants';
 
 const GptSearch =() =>{
   return (
-    <div>
-      {/* GptSearch--->First Page
-          Gpt Movie Suggestion--->Second Page */}
+    <>
+       <div className="fixed -z-10">
+          <img src={BGC_IMAGE} alt="logo" />
+       </div>
 
-      <div className="fixed -z-10 ">
-        <img src={BGC_IMAGE}
-        alt="logo" />
-      </div>
-
-
-          <GptSearchBar/>
-          <GptMovieSuggestions/>
-      </div>
+       <div>
+         <GptSearchBar />
+         <GptMovieSuggestions />
+       </div>
+  </>
   )
 }
 

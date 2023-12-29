@@ -38,6 +38,14 @@
 -GPT Serach Page
 -GPT Serach Bar
 -(***)Multi language Feature in our Application
+-Get Open AI API key
+-GPT Search API Call
+-Fetched gptMovieSuggestions from TMDB
+-created gpt Slice and added data
+-Reused Movie List component to make movie suggestion container
+-Memoization
+
+
 
 #Features
 -Login/Signup Form
