@@ -24,4 +24,4 @@ export const API_OPTIONS = {
   {identifier:"spanish",name:"Spanish"} ] 
   
   //Imported the API key from ChatGpt
-  export const OPENAI_KEY="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";
+  export const OPENAI_KEY="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";
